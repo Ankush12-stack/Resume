@@ -1,0 +1,247 @@
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Ankush Gupta (https://portfolioankush.netlify.app/)
+%
+% Original repository:
+% https://github.com/Ankush12-stack/Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Ankush}{Gupta}{ \urlstyle{same}\href{https://portfolioankush.netlify.app/}| 
+\href{mailto:ag9012568084@gmail.com}{ag9012568084@gmail.com} | 6397165839 | \href{mailto:ankush.gupta@learner.manipal.edu}{ankush.gupta@learner.manipal.edu}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Manipal University}
+\descript{Master  in Computer Applications}
+\location{Oct 2023 | Manipal, karnataka}
+\sectionsep
+
+\subsection{kumaun University}
+\descript{BCA}
+\location{Oct 2021 | kashipur, Uttarakhand}
+{College of Technology \\
+kashipur}\\
+\location{ Cum. GPA: 7.5 / 10.0 \\ 
+}
+\sectionsep
+
+\subsection{Sai Public School,Kashipur}
+\location{Grad. April 2017|  Kashipur, India}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Facebook:// \href{https://www.facebook.com/profile.php?id=100025675293562}{\bf profile} \\
+Github:// \href{https://github.com/Ankush12-stack}{\bf Ankush12-stack} \\
+LinkedIn://  \href{https://www.linkedin.com/in/ankush-gupta-a68bb1184/}{\bf ankush-gupta-a68bb1184} \\
+Website://  \href{https://portfolioankush.netlify.app/}{\bf portfolioankush} \\
+Twitter://  \href{https://twitter.com/ankgupta1234}{\bf @ankgupta1234} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Graduate}
+Advanced Machine Learning \\
+Open Source Software Engineering \\
+Data Analytics \\
+Optimization Technique \\
+Cyber Forensics \\
+Web Development \\
+Computer Networks \\
+Machine Learning \\
+Data Structure \\
+\sectionsep
+
+\subsection{Undergraduate}
+Information Technology \\
+Operating Systems \\
+C++/C \\
+Functional Programming \\
+Computer Graphics  \\
+Unix Tools and Scripting \\
+Software Engineering \\
+Java \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Over 5000 lines:}
+Java \textbullet{}   Shell \textbullet{} Python \textbullet{} Javascript \\
+MYSQL \textbullet{} AndroidDevelopment \textbullet{} UX/UI  \textbullet{} \\ 
+\location{Over 1000 lines:}
+C \textbullet{} C++ \textbullet{} CSS \textbullet{} PHP \textbullet{} Assembly \\
+\location{Familiar:}
+AS3 \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Intershala}
+\descript{| UX/UI Designer }
+\location{Jan 2017 - Present | Bengaluru, KA}
+\sectionsep
+
+\runsubsection{Coursera}
+\descript{| UX/UI DESIGN COURSE }
+\location{LIFETIME  | MANIPAL, KA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Designed the best ux/ui interface for user experience.
+\item Full-stack developer - Wrote and reviewed code for JS using Backbone, HTML, CSS and Require MySql 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Google}
+\descript{| Digital Marketing Course }
+\location{Lifetime | Virtual on Coursera}
+\begin{tightemize}
+\item Worked on Marketing techniques Like SEO, SEM and Used Google Analytics Tool.
+\item Got the certificate from Google with 85% performance.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Udemy}
+\descript{| Python Course }
+\location{Jan 2017-2021 | Done Virtually on Udemy}
+\begin{tightemize}
+\item Learn Python Commands and implement it.
+\item Used in Machine Learning and Reseach.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Hackathon on Hackerrank}
+\descript{| Java Programming }
+\location{Jan 2022 | Got Good Rank }
+\begin{tightemize}
+\item Partificipated in Hackathon.
+\item Got the certificate for participation.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research}
+\runsubsection{Machine Learning Lab}
+\descript{| Researcher}
+\location{Jan 2022 - Present | Manipal, KA}
+Worked with \textbf{{Nirmal Nigam}} and \textbf{{Prof Ashutosh Saxena}} to create \textbf{Machine Learning Approach}, a indemand subject that helps in building best model for data analysis approach.  
+\sectionsep
+
+\runsubsection{Android Programming Lab}
+\descript{| Part of a project team}
+\location{November 2022, Manipal}
+Led the development of \textbf{movie ticket app}, the app with all functionalities of Android app. \textbf{\href{Prof Shameem }} to aid in research. 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Awards} 
+\begin{tabular}{rll}
+2015	     &  top 52/2500 & Debate Competiton and runner up in competition\\
+2015	     & 1\textsuperscript{st}/50 & English Olympiad,Kashipur\\
+2016	     & National & Participated in Annual function\\
+2017         & National & Indian National Mathematics Olympiad Finalist\\
+\end{tabular}
+\sectionsep
+
+\nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
